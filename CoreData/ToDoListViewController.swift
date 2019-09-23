@@ -1,19 +1,24 @@
 import UIKit
 
 class ToDoListViewController: UITableViewController {
-
+    
     var data = ["D", "sd"]
+    
+    let defaults = UserDefaults.standard
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
+        data = items
+        }
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return data.count
+        return data.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCell(withIdentifier: "shit", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "shit", for: indexPath)
         cell.textLabel?.text = data[indexPath.row]
         return cell
     }
@@ -37,11 +42,16 @@ class ToDoListViewController: UITableViewController {
         }
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             self.data.append(textField.text!)
+            self.defaults.set(self.data, forKey: "TodoListArray")
+            
             self.tableView.reloadData()
         }
         alert.addAction(action)
         present(alert, animated: true)
-        
     }
+    
+
+    
+    
 }
 
