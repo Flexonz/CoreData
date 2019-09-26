@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9B21849233A9606002144C5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B21848233A9606002144C5 /* Item.swift */; };
 		A9E3E66C2335059E00D9E953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3E66B2335059E00D9E953 /* AppDelegate.swift */; };
 		A9E3E66E2335059E00D9E953 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3E66D2335059E00D9E953 /* ToDoListViewController.swift */; };
 		A9E3E6712335059E00D9E953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E3E66F2335059E00D9E953 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9B21848233A9606002144C5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A9E3E6682335059E00D9E953 /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E3E66B2335059E00D9E953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E3E66D2335059E00D9E953 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				A9E3E66B2335059E00D9E953 /* AppDelegate.swift */,
 				A9E3E66D2335059E00D9E953 /* ToDoListViewController.swift */,
+				A9B21848233A9606002144C5 /* Item.swift */,
 				A9E3E66F2335059E00D9E953 /* Main.storyboard */,
 				A9E3E672233505A000D9E953 /* Assets.xcassets */,
 				A9E3E674233505A000D9E953 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9E3E66E2335059E00D9E953 /* ToDoListViewController.swift in Sources */,
+				A9B21849233A9606002144C5 /* Item.swift in Sources */,
 				A9E3E66C2335059E00D9E953 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
